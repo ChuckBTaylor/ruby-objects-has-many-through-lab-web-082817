@@ -6,8 +6,9 @@ class Appointment
   def initialize(date, doc, patient = nil)
     @date = date
     @doctor = doc
-    @patient = patient
-    doc.appointments << self
+    #@patient = patient
+    #doc.appointments << self
+    doc.add_appointment(self)
   end
 
 
